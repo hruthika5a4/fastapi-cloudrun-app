@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from apis.upload_sa import router as upload_router
 
+print("✅ main.py is being executed...")  # 👈 debug log
+
 app = FastAPI(title="GCP Secret Manager API")
 
 @app.get("/")
